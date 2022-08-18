@@ -37,6 +37,10 @@ $border-color: 2px #989898 solid;
                 font-size: 10px;
                 margin-top: 5px;
                 margin-left: 5px;
+                display: flex;
+                &__time {
+                    margin-left: 5px;
+                }
             }
         }
     }
@@ -49,8 +53,7 @@ $border-color: 2px #989898 solid;
             &__rounded {
                 padding: 10px 15px 10px 15px;
                 display: flex;
-                justify-content: center;
-                align-items: center;                
+                justify-content: center;            
                 background-color: deeppink;
                 border-radius: 8px 8px 8px 8px;
                 &__text {
@@ -58,11 +61,15 @@ $border-color: 2px #989898 solid;
                 }
             }
             &__date {
+                display: flex;
                 font-weight: 300;
                 font-size: 10px;
                 margin-top: 5px;
                 margin-left: 5px;
-                text-align: end;
+                justify-content: flex-end;
+                &__time {
+                    margin-left: 5px;
+                }
             }
         }
     }
