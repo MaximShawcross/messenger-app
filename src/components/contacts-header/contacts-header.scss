@@ -1,0 +1,34 @@
+$system-grey: #D8D8D8;
+$border-color: 2px #989898 solid;
+
+@mixin img {
+    display: block;            
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.aside {    
+    &__header {
+        padding: 15px 10px;
+        background-color: $system-grey;
+        border-bottom: $border-color;         
+        &__img {
+            display: flex;
+            img {
+                @include img;
+            }:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+        &__search {
+            margin-top: 20px;
+            border: $border-color;       
+            border-radius: 8px 8px 8px 8px;
+            width: 100%;
+            padding: 3px;
+        }
+    }
+}

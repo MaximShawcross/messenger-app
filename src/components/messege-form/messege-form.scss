@@ -1,0 +1,25 @@
+$system-grey: #D8D8D8;
+$border-color: 2px #989898 solid;
+
+@mixin img {
+    display: block;            
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.messeges {
+    &__footer {
+        margin-top: auto;
+        background-color:  $system-grey;
+        padding: 10px 15px;
+        &__input {
+            min-height: 30px;
+            border: $border-color;       
+            border-radius: 12px 12px 12px 12px;
+            width: 100%;        
+        }
+    }
+}

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+$system-grey: #D8D8D8;
+$border-color: 2px #989898 solid;
+
+@mixin img {
+    display: block;            
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.messeges {
+    &__header {
+        padding: 10px 15px;
+        background-color: $system-grey;
+        display: flex;
+        border-bottom: $border-color;
+        &__name {
+            font-size: 14px;
+            align-self: center;
+        }
+        img {
+            @include img;
+        }
+    }
+}
