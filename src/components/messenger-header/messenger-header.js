@@ -12,34 +12,32 @@ const MessengerHeader = (props) => {
     const {request} = useHttp();
 
     useEffect(() => {
-        contactId === 0 ? getHeader() :getHeader(contactId) 
+        contactId === 0 ? getHeader() :getHeader(contactId);
     }, [contactId])
 
 
     const getHeader = (id = 1) => {
         request(`http://localhost:3001/users/${id}`)
             .then(item => setHeader(item))
-            .then(setLoadingStatus(true))
+            .then(setLoadingStatus(true));
     }
     
     const renderItem = (header) => {
         const {img, name} = header;
 
-       return( 
+       return ( 
             <>
-                <img src= {img} alt="user-avatar"/>
+                <img src = {img} alt="user-avatar"/>
                 <h2 className = "messeges__header__name">{name}</h2>
             </>
         )
     }
 
-    const items = renderItem(header)
+    const items = renderItem(header);
     const content = loadingStatus ? items : <p>wait a second</p>;
 
     return (
         <div className="messeges__header">
-            {/* <img src= {avatar} alt="user-avatar"/>
-            <h2 className = "messeges__header__name">Aloha dance</h2> */}
             {content}
         </div>
     )

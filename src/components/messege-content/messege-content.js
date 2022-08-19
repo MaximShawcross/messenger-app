@@ -6,6 +6,7 @@ import './messege-content.scss';
 
 const MessegeContent = (props) => {
     const [messeges, setMesseges] = useState([]);
+    const [image, setImage] = useState("");
     const [loadingStatus, setLoadingStatus] = useState(false);    
 
     const {request} = useHttp();
@@ -13,6 +14,7 @@ const MessegeContent = (props) => {
     
     useEffect(() => {
         contactId === 0 ? getMesseges() : getMesseges(contactId);
+        contactId === 0 ? getImage() : getImage(contactId);
     }, [contactId])
     
     const getMesseges = (id = 1) => {
@@ -21,17 +23,22 @@ const MessegeContent = (props) => {
             .then(setLoadingStatus(true));        
     }
 
-    const renderComponents = (arr) => {
+    const getImage = (id = 1) => {
+        request(`http://localhost:3001/users/${id}`)
+            .then(item => setImage(item.img));
+    }
+
+    const renderComponents = (arr, img) => {
         return arr.map(item => {
             if (item.type === "own") {
-               return <OwnMessegeItem value = {item.value} date = {item.date} time = {item.time}/>
+               return <OwnMessegeItem value = {item.value} date = {item.date} time = {item.time}/>;
             } else {
-                return <ResponseMessegeItem value = {item.value} date = {item.date} time = {item.time}/>
+                return <ResponseMessegeItem img = {img} value = {item.value} date = {item.date} time = {item.time}/>;
             }
         })
     }
 
-    const items = renderComponents(messeges);
+    const items = renderComponents(messeges, image);
     const content = loadingStatus ? items : <p>wait a second</p>;
 
     return (
@@ -60,11 +67,11 @@ const OwnMessegeItem = (props) => {
 }
 
 const ResponseMessegeItem = (props) => {
-    const {value, date, time} = props;
+    const {value, date, time, img} = props;
 
     return (
         <div className="response-message__item">
-            <img src = "" alt="user-avatar"/>
+            <img src = {img} alt="user-avatar"/>
             <div className="response-message__item__content">
                 <div className="response-message__item__wrapper__rounded">
                     <div className="response-message__item__wrapper__rounded__text">{value}</div>

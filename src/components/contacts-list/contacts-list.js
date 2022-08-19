@@ -24,11 +24,11 @@ const ContactsList = (props) => {
             .then(setLoadingStatus(true));
     }
 
-    function renderComponents (arr) {   
-       return arr.map(item => {
+    function renderComponents (arr) {        
+        return arr.map(item => {
             return <View key = {item.id} id = {item.id} 
             name = {item.name} time = {item.time} 
-            img = {item.img} messege = {item.messege} 
+            img = {item.img} last_messege = {item.last_messege} 
             setId = {setId}/>
         })
     } 
@@ -46,8 +46,8 @@ const ContactsList = (props) => {
 }
 
 const View = (props) => {
-    const {name, time, img, messege, setId, id} = props;
-
+    const {name, time, img, last_messege, setId, id} = props;
+    
     return (
         <div className="aside__list__item"
             onClick = {() => setId(id)}>
@@ -56,7 +56,7 @@ const View = (props) => {
             </div>
             <div className="aside__list__item__text">
                 <p className="aside__list__item__text__name">{name}</p>
-                <div className="aside__list__item__text__message">{messege}</div>
+                <div className="aside__list__item__text__message">{last_messege}</div>
             </div>
             <div className="aside__list__item__date">{time}</div>
         </div>
