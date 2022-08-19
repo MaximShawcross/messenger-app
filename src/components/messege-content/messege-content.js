@@ -4,16 +4,21 @@ import { useHttp } from '../../hooks/http.hook';
 
 import './messege-content.scss';
 
-const MessegeContent = () => {
+const MessegeContent = (props) => {
     const [messeges, setMesseges] = useState([]);
-    const [messagesImg, setMessegesImg] = useState("");
     const [loadingStatus, setLoadingStatus] = useState(false);    
 
     const {request} = useHttp();
+    const {contactId} = props;
     
     useEffect(() => {
-        getMesseges(2)
+        getMesseges(1);
     }, [])
+
+    useEffect(() => {
+        getMesseges(contactId);
+        console.log(1);
+    }, [contactId])
     
     const getMesseges = (id) => {
         request(`http://localhost:3001/users/${id}`)
@@ -64,7 +69,7 @@ const ResponseMessegeItem = (props) => {
 
     return (
         <div className="response-message__item">
-            <img src= "" alt="user-avatar"/>
+            <img src = "" alt="user-avatar"/>
             <div className="response-message__item__content">
                 <div className="response-message__item__wrapper__rounded">
                     <div className="response-message__item__wrapper__rounded__text">{value}</div>

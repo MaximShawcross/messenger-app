@@ -3,12 +3,16 @@ import { useHttp } from '../../hooks/http.hook';
 
 import './contacts-list.scss';
 
-const ContactsList = () => {
+const ContactsList = (props) => {
     const [userList, setUserList] = useState([]);  
     const [loadingStatus, setLoadingStatus] = useState(false); 
 
     const {request} = useHttp()
 
+    const setId = (id) => {
+        props.setContactId(id);
+    }
+    
     useEffect(() => {
         getUsers();
         // eslint-disable-next-line
@@ -20,9 +24,12 @@ const ContactsList = () => {
             .then(setLoadingStatus(true));
     }
 
-    function renderComponents (arr) {       
+    function renderComponents (arr) {   
        return arr.map(item => {
-            return <View name = {item.name} time = {item.time} img = {item.img} messege = {item.messege}/>
+            return <View key = {item.id} id = {item.id} 
+            name = {item.name} time = {item.time} 
+            img = {item.img} messege = {item.messege} 
+            setId = {setId}/>
         })
     } 
     
@@ -39,10 +46,11 @@ const ContactsList = () => {
 }
 
 const View = (props) => {
-    const {name, time, img, messege} = props;
+    const {name, time, img, messege, setId, id} = props;
 
     return (
-        <div className="aside__list__item">
+        <div className="aside__list__item"
+            onClick = {() => setId(id)}>
             <div className="aside__list__item__img">
                 <img src = {img} alt="user-avatar"/>
             </div>

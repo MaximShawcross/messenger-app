@@ -4,12 +4,12 @@ import MessegeContent from "../messege-content/messege-content"
 
 import './messege-field.scss'
 
-const MessegeField = () => {
-
+const MessegeField = (props) => {
+    const {contactId} = props;
     return (
         <div className="messeges">
-            <MessengerHeader/>
-            <MessegeContent/>
+            <MessengerHeader contactId = {contactId}/>
+            <MessegeContent contactId = {contactId}/>
             <MessegeForm/>
         </div>
     )
