@@ -13,7 +13,7 @@ const App = () => {
     return (
         <div className="app">
             <div className="aside">
-                <ContactsHeader/>
+                <ContactsHeader contactId = {contactId}/>
                 <ContactsList setContactId = {setContactId}/>
             </div>
             <MessegeField contactId = {contactId}/>

@@ -6,6 +6,7 @@ import './messege-field.scss'
 
 const MessegeField = (props) => {
     const {contactId} = props;
+    
     return (
         <div className="messeges">
             <MessengerHeader contactId = {contactId}/>

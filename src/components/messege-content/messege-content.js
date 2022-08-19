@@ -12,15 +12,10 @@ const MessegeContent = (props) => {
     const {contactId} = props;
     
     useEffect(() => {
-        getMesseges(1);
-    }, [])
-
-    useEffect(() => {
-        getMesseges(contactId);
-        console.log(1);
+        contactId === 0 ? getMesseges() : getMesseges(contactId);
     }, [contactId])
     
-    const getMesseges = (id) => {
+    const getMesseges = (id = 1) => {
         request(`http://localhost:3001/users/${id}`)
             .then(item => setMesseges(item.messeges))
             .then(setLoadingStatus(true));        
@@ -37,7 +32,7 @@ const MessegeContent = (props) => {
     }
 
     const items = renderComponents(messeges);
-    const content = loadingStatus ? items : null;
+    const content = loadingStatus ? items : <p>wait a second</p>;
 
     return (
         <>
