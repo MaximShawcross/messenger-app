@@ -6,6 +6,7 @@ import './contacts-list.scss';
 const ContactsList = (props) => {
     const [userList, setUserList] = useState([]);  
     const [loadingStatus, setLoadingStatus] = useState(false); 
+    let lastMessege = "";
 
     const {request} = useHttp()
 
@@ -21,14 +22,18 @@ const ContactsList = (props) => {
     const getUsers = () => {
         request("http://localhost:3001/users")
             .then(item => setUserList(item))
-            .then(setLoadingStatus(true));
+            .then(setLoadingStatus(true))
     }
+
 
     function renderComponents (arr) {        
         return arr.map(item => {
+            let messeges = item.messeges
+            let lastMessege = messeges[messeges.length -1];
+
             return <View key = {item.id} id = {item.id} 
             name = {item.name} time = {item.time} 
-            img = {item.img} last_messege = {item.last_messege} 
+            img = {item.img} lastMessege = {lastMessege.value} 
             setId = {setId}/>
         })
     } 
@@ -46,7 +51,7 @@ const ContactsList = (props) => {
 }
 
 const View = (props) => {
-    const {name, time, img, last_messege, setId, id} = props;
+    const {name, time, img, lastMessege, setId, id} = props;
     
     return (
         <div className="aside__list__item"
@@ -56,7 +61,7 @@ const View = (props) => {
             </div>
             <div className="aside__list__item__text">
                 <p className="aside__list__item__text__name">{name}</p>
-                <div className="aside__list__item__text__message">{last_messege}</div>
+                <div className="aside__list__item__text__message">{lastMessege}</div>
             </div>
             <div className="aside__list__item__date">{time}</div>
         </div>

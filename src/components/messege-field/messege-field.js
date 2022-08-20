@@ -11,7 +11,7 @@ const MessegeField = (props) => {
         <div className="messeges">
             <MessengerHeader contactId = {contactId}/>
             <MessegeContent contactId = {contactId}/>
-            <MessegeForm/>
+            <MessegeForm contactId = {contactId}/>
         </div>
     )
 }
