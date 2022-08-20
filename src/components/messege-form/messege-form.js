@@ -8,14 +8,14 @@ import { useHttp } from "../../hooks/http.hook";
 import './messege-form.scss';
 
 const MessegeForm = (props) => {     
-    const [obj, setObj] = useState("");
+    const [user, setUser] = useState("");
 
-    const {contactId} = props;
+    const {contactId, setMessege} = props;
     const {request} = useHttp();
 
     useEffect(() => {
         request(`http://localhost:3001/users/3`)
-            .then(item => setObj(item))
+            .then(item => setUser(item))
     }, [])
 
     return (
@@ -24,10 +24,15 @@ const MessegeForm = (props) => {
             messege: ''
         }}
         onSubmit = { values => {
-            let settings = {type: 'response', value: values.messege, date: '21/12/2119', time: '21:21 pm'}
-            obj.messeges.push(settings);
-            request(`http://localhost:3001/users/3`, "PUT", JSON.stringify(obj))
-                .then(item => console.log("УСПЕШНО", item))
+            let settings = {
+                type: 'own', value: values.messege, date: '21/12/2119', time: '21:21 pm'
+            }
+
+            setMessege(item => [...item, settings]);
+
+            user.messeges.push(settings);
+            request(`http://localhost:3001/users/3`, "PUT", JSON.stringify(user))
+                .then(item => console.log("sucsess", item))
         }}
         >
             <div className="messeges__footer">

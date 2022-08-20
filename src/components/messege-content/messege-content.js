@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo} from 'react';
+import { useEffect, useState} from 'react';
 
 import { useHttp } from '../../hooks/http.hook'; 
 
@@ -7,10 +7,11 @@ import './messege-content.scss';
 const MessegeContent = (props) => {
     const [messeges, setMesseges] = useState([]);
     const [image, setImage] = useState("");
-    const [loadingStatus, setLoadingStatus] = useState(false);    
+    const [loadingStatus, setLoadingStatus] = useState(false);  
+    // const [messegeLodingStatus, setMessegeLoadingStatus] = useState(false);  
 
     const {request} = useHttp();
-    const {contactId} = props;
+    const {contactId, messege} = props;
     
     useEffect(() => {
         contactId === 0 ? getMesseges() : getMesseges(contactId);
@@ -38,12 +39,20 @@ const MessegeContent = (props) => {
         })
     }
 
+    const renderOwnMessege = (arr) => {
+        return arr.map(item => {
+           return <OwnMessegeItem value = {item.value} date = {item.date} time = {item.time}/>;
+        }) 
+    } 
+
     const items = renderComponents(messeges, image);
-    const content = loadingStatus ? items : <p>wait a second</p>;
+    const content = loadingStatus ? items : <p>wait a second</p>; 
+    const contentMessege = renderOwnMessege(messege);    
 
     return (
         <>
             {content}
+            {contentMessege}
         </>
     )
 }
