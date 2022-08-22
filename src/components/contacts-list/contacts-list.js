@@ -3,21 +3,32 @@ import { useHttp } from '../../hooks/http.hook';
 
 import './contacts-list.scss';
 
-const ContactsList = (props) => {
+const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
+    const [newMessege, setNewMessege] = useState([]);
     const [userList, setUserList] = useState([]);  
     const [loadingStatus, setLoadingStatus] = useState(false); 
-    let lastMessege = "";
-
+    // console.log(lastMessege[0])
     const {request} = useHttp()
 
     const setId = (id) => {
-        props.setContactId(id);
+        setContactId(id);
     }
     
     useEffect(() => {
         getUsers();
+        
+        try {
+            setMessege(messege);
+        } catch {
+            console.log("messege not found")
+        }
+        
         // eslint-disable-next-line
-    }, [])
+    }, [messege])
+
+    const setMessege = (messege) => {
+        setNewMessege(messege[messege.length -1].value);
+    }
 
     const getUsers = () => {
         request("http://localhost:3001/users")
@@ -25,21 +36,24 @@ const ContactsList = (props) => {
             .then(setLoadingStatus(true))
     }
 
-
     function renderComponents (arr) {        
         return arr.map(item => {
             let messeges = item.messeges
-            let lastMessege = messeges[messeges.length -1];
+            let staticLastMessege = messeges[messeges.length -1].value;
+
+            let contentLastMessege = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? newMessege : staticLastMessege; 
 
             return <View key = {item.id} id = {item.id} 
             name = {item.name} time = {item.time} 
-            img = {item.img} lastMessege = {lastMessege.value} 
+            img = {item.img} lastMessege = {contentLastMessege} 
             setId = {setId}/>
         })
     } 
-    
+
     const items = renderComponents(userList);
     const content = loadingStatus ? items : null;
+
+    // filterComponents(items);
 
 
     return (

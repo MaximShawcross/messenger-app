@@ -7,16 +7,17 @@ import "./App.scss";
 
 
 const App = () => {
-
+    const [messege, setMessege] = useState([]);    
     const [contactId, setContactId] = useState(0);
+    const [lastMessege, setLastMassege] = useState([]);
 
     return (
         <div className="app">
             <div className="aside">
                 <ContactsHeader contactId = {contactId}/>
-                <ContactsList setContactId = {setContactId}/>
+                <ContactsList messege = {messege} lastMessege = {lastMessege} contactId = {contactId} setContactId = {setContactId}/>
             </div>
-            <MessegeField contactId = {contactId}/>
+            <MessegeField messege = {messege} setMessege = {setMessege} setLastMassege = {setLastMassege} contactId = {contactId}/>
             
         </div>       
     )

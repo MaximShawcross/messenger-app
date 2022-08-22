@@ -1,3 +1,5 @@
+import { cleanup } from '@testing-library/react';
+import { nanoid } from 'nanoid';
 import { useEffect, useState} from 'react';
 
 import { useHttp } from '../../hooks/http.hook'; 
@@ -11,11 +13,18 @@ const MessegeContent = (props) => {
     // const [messegeLodingStatus, setMessegeLoadingStatus] = useState(false);  
 
     const {request} = useHttp();
-    const {contactId, messege} = props;
+    const {contactId, messege, setMessege} = props;
     
     useEffect(() => {
+        setMessege([]);
+        // try {
+        //     setLastMassege([]);
+        // } catch {
+        //     console.log('its fine')
+        // }
         contactId === 0 ? getMesseges() : getMesseges(contactId);
         contactId === 0 ? getImage() : getImage(contactId);
+
     }, [contactId])
     
     const getMesseges = (id = 1) => {
@@ -32,27 +41,30 @@ const MessegeContent = (props) => {
     const renderComponents = (arr, img) => {
         return arr.map(item => {
             if (item.type === "own") {
-               return <OwnMessegeItem value = {item.value} date = {item.date} time = {item.time}/>;
+               return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time}/>;
             } else {
-                return <ResponseMessegeItem img = {img} value = {item.value} date = {item.date} time = {item.time}/>;
+                return <ResponseMessegeItem key = {nanoid()} img = {img} value = {item.value} date = {item.date} time = {item.time}/>;
             }
         })
     }
 
     const renderOwnMessege = (arr) => {
         return arr.map(item => {
-           return <OwnMessegeItem value = {item.value} date = {item.date} time = {item.time}/>;
+            if(item.id === contactId){
+                return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time}/>;
+            }
         }) 
     } 
 
     const items = renderComponents(messeges, image);
     const content = loadingStatus ? items : <p>wait a second</p>; 
-    const contentMessege = renderOwnMessege(messege);    
+    const ownMessege = renderOwnMessege(messege); 
+
 
     return (
         <>
             {content}
-            {contentMessege}
+            {ownMessege}
         </>
     )
 }

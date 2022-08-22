@@ -10,13 +10,17 @@ import './messege-form.scss';
 const MessegeForm = (props) => {     
     const [user, setUser] = useState("");
 
-    const {contactId, setMessege} = props;
+    const {contactId, setMessege, setLastMassege} = props;
     const {request} = useHttp();
-
-    useEffect(() => {
-        request(`http://localhost:3001/users/3`)
-            .then(item => setUser(item))
-    }, [])
+    
+    useEffect(() => {    
+        contactId === 0 ? getMesseges() : getMesseges(contactId)
+    }, [contactId])
+    
+    const getMesseges = (id = 1) => {
+        request(`http://localhost:3001/users/${id}`)
+        .then(item => setUser(item))
+    }
 
     return (
         <Formik initialValues={{
@@ -25,13 +29,18 @@ const MessegeForm = (props) => {
         }}
         onSubmit = { values => {
             let settings = {
-                type: 'own', value: values.messege, date: '21/12/2119', time: '21:21 pm'
+                type: 'own', 
+                value: values.messege, 
+                date: '21/12/2119', 
+                time: '21:21 pm',
+                id:contactId
             }
 
             setMessege(item => [...item, settings]);
+            setLastMassege(item => [...item, settings]);
 
             user.messeges.push(settings);
-            request(`http://localhost:3001/users/3`, "PUT", JSON.stringify(user))
+            request(`http://localhost:3001/users/${contactId}`, "PUT", JSON.stringify(user))
                 .then(item => console.log("sucsess", item))
         }}
         >
