@@ -50,8 +50,12 @@ const MessegeContent = (props) => {
 
     const renderOwnMessege = (arr) => {
         return arr.map(item => {
-            if(item.id === contactId){
-                return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time}/>;
+            if (item.type === "own"){
+                if(item.id === contactId){
+                    return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time}/>;
+                }
+            } else {
+                return <ResponseMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time} img = {item.img}/>
             }
         }) 
     } 
