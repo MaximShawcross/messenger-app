@@ -21,237 +21,175 @@
         },
         {
           "type": "own",
-          "value": "mmksdmks",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
+          "value": "Hey dude)00",
+          "date": "22/7/2022. ",
+          "time": "11:59 PM",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris can literally undress a woman with his eyes.",
+          "date": "23/7/2022. ",
+          "time": "12:00 AM",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "own",
-          "value": "sup body asdaed zc  czx ",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
+          "value": "2",
+          "date": "23/7/2022. ",
+          "time": "12:26 AM",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris ones fought Chuck Norris. the world exploded the only person that survived was Chuck Norris no one kills Chuck Norris!!!",
+          "date": "23/7/2022. ",
+          "time": "12:26 AM",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "own",
-          "value": "aloha nahh",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
+          "value": "Aloha lox",
+          "date": "23/8/2022. ",
+          "time": "12:58 AM",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Q. Can you spell \"Chuck Norris\" without using any r's? A. Yes, \"Chuck Kickass\"",
+          "date": "23/8/2022. ",
+          "time": "12:58 AM",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "own",
-          "value": "johny mnemonuc",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
+          "value": "3",
+          "date": "23/8/2022",
+          "time": "1:58 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris is who told Frank the Rabbit the world will end in 28 days.",
+          "date": "23/8/2022",
+          "time": "1:59 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "own",
+          "value": "2",
+          "date": "23/8/2022",
+          "time": "2:00 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Pictures are said to be worth a thousand words. Pictures of Chuck Norris are worth 10,000 words.",
+          "date": "23/8/2022",
+          "time": "2:00 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "own",
+          "value": "223213213",
+          "date": "23/8/2022",
+          "time": "2:02 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris just killed Clas.J",
+          "date": "23/8/2022",
+          "time": "2:02 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "own",
+          "value": "sup body",
+          "date": "23/8/2022",
+          "time": "2:35 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Somebody once witnessed Chuck Norris saw a mans head clean off, with a pillow!",
+          "date": "23/8/2022",
+          "time": "2:35 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 1,
+          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "own",
           "value": "12312",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "Kurt",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "sup body",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "rewqweq",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "sup body",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "asd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "33321",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "3333",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris can divide by zero.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "2",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "response",
-          "value": "Want to know what Chuck Norris' roundhouse kick feels like? Go ask Stephen Hawking",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "2",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris pioneered the idea of multiple organ donations after ripping out the still-beating heart, kidneys, lungs, liver and eyes of some fool who scratched his car.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "2",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "response",
-          "value": "For Chuck Norris...In the game Monopoly every space is free parking.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "213333",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "2",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "dffd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris' density: 89,000,000 Kelvin (otherwise known as 1 Norris)",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "dffd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris dosen't obey WeeGee.WeeGee obeys Chuck Norris",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "own",
-          "value": "3221",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris isn't a human being, he's a human doing.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 1,
-          "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
-        },
-        {
-          "type": "own",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "date": "23/8/2022",
+          "time": "2:38 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 1,
           "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "response",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Chuck Norris had a Doctor that suggested he needed to eat tofu instead of red meat. Chuck immediately suggested the Doctor needed to have the teeth slapped out of his mouth.",
+          "date": "23/8/2022",
+          "time": "2:38 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 1,
           "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "own",
-          "value": "33",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "32323232",
+          "date": "23/8/2022",
+          "time": "2:56 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 1,
           "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "response",
-          "value": "Chuck Norris took down god zilla in 1894.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Chuck Norris made the Big Bang when he was in space. The way he did it is by just clapping so hard that it made a \"Big bang\". Get it?",
+          "date": "23/8/2022",
+          "time": "2:56 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 1,
           "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "own",
-          "value": "sup body",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "22",
+          "date": "23/8/2022",
+          "time": "3:11 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 1,
           "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         },
         {
           "type": "response",
-          "value": "Chuck Norris doesn't wish on shooting stars. He doesn't need handouts.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Chuck Norris will soon open his own fried chicken restaurant chain: RKC-- Roundhouse Kickin' Chicken.",
+          "date": "23/8/2022",
+          "time": "3:11 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 1,
           "img": "https://i1.sndcdn.com/artworks-idTFatjG1tYAX1Nv-bBSPjg-t500x500.jpg"
         }
@@ -278,348 +216,297 @@
         },
         {
           "type": "own",
-          "value": "mmksdmks",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "sup body",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "2",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "sd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "asd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "Stray",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "Victor stray!",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "sss",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "sadd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "asdasde",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "stray",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "228",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "22222111",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "aadadsad",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "response",
-          "value": "You are always told to turn off your cell phone during a flight, in case Chuck Norris calls you and whispers the secret inantation to make you spontaneously combust.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "aadadsadd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris can skydive into outer space.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
           "value": "efasd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
+          "date": "23/8/2022. ",
+          "time": "12:27 AM",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "Chuck Norris' feminine side is more manly than the manliest man's manly side.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "111",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "фывуву",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "wqewqew",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
+          "value": "Anti-deforestation laws prohibit complete listings of Chuck Norris' acomplishments on any paper based product.",
+          "date": "23/8/2022. ",
+          "time": "12:27 AM",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
           "value": "21",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "1",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
+          "date": "23/8/2022. ",
+          "time": "12:47 AM",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "11143434",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "1",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "322",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "response",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "own",
-          "value": "21322",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris has kidnapped Bin Laden",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
+          "value": "MICHAEL JACKSON MOLESTED LITTLE KIDS... CHUCK NORRIS MOLESTED MICHAEL.",
+          "date": "23/8/2022. ",
+          "time": "12:47 AM",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
           "value": "2",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
+          "date": "23/8/2022. ",
+          "time": "12:49 AM",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "Chuck Norris can calculate letters.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "The only reason Chuck Norris didn't win an Oscar for his performance in \"Sidekicks\" is because nobody in their right mind would willingly give Chuck Norris a blunt metal object. That's just suicide",
+          "date": "23/8/2022. ",
+          "time": "12:49 AM",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
-          "value": "229",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2
+          "value": "rff",
+          "date": "23/8/2022. ",
+          "time": "12:56 AM",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "how do you put out a forest fire? you have Chuck Norris fart on it.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Chuck Norris can't play LIFE. his is too complicated",
+          "date": "23/8/2022. ",
+          "time": "12:56 AM",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
-          "value": "d",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "staer",
+          "date": "23/8/2022. ",
+          "time": "12:58 AM",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "Chuck Norris knows the difference between a cow's tail and water faucet.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Some alchemists claim they have turned lead into gold. Chuck Norris can transform water into plutonium, just by ingesting and excreting it.",
+          "date": "23/8/2022. ",
+          "time": "12:58 AM",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
-          "value": "d",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "111",
+          "date": "23/8/2022",
+          "time": "2:02 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "MacGyver immediately tried to make a bomb out of some Q-Tips and Gatorade, but Chuck Norris roundhouse-kicked him in the solar plexus. MacGyver promptly threw up his own heart.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2,
-          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
-        },
-        {
-          "type": "own",
-          "value": "4311",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 2,
-          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
-        },
-        {
-          "type": "response",
-          "value": "If iron and steel can talk, they wanna call Chuck Norris daddy.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Chuck Norris once ate a whole cake before his friends could tell him there was a stripper in it.",
+          "date": "23/8/2022",
+          "time": "2:02 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
           "value": "asd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "date": "23/8/2022",
+          "time": "2:44 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "Chuck Norris can ride a bike. Without getting on.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Chuck Norris knows how much wood a woodchuck would chuck if a woodchuck could chuck wood.",
+          "date": "23/8/2022",
+          "time": "2:44 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
-          "value": "12312",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "e",
+          "date": "23/8/2022",
+          "time": "2:53 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "\"If it bleed... we can kill it\" Chuck Norris on the set of Predator trying to steal Arny's job.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Once on a beer & fish fry night, Chuck Norris made hush puppies out of an annoying litter of yelping newborn beagles.",
+          "date": "23/8/2022",
+          "time": "2:53 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "own",
-          "value": "12312",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "2",
+          "date": "23/8/2022",
+          "time": "2:54 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         },
         {
           "type": "response",
-          "value": "If you sneeze on Chuck Norris, He'll sneeze at you back. Which will blow you away.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "david copper field can turn a $1 bill into $100. but Chuck Norris can turn david copperfield into the u.s. tresury",
+          "date": "23/8/2022",
+          "time": "2:54 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "312",
+          "date": "23/8/2022",
+          "time": "2:55 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "a blind man once walked in to Chuck Norris chuck said do you know who i am im Chuck Norris. the mere mention of his name cured his blindness but sadly the first last and only thing he saw was a deadly round house kick to the face",
+          "date": "23/8/2022",
+          "time": "2:55 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "3s",
+          "date": "23/8/2022",
+          "time": "2:57 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Most people get their heat from the sun, the sun gets it heat from a single Chuck Norris roundhouse kick",
+          "date": "23/8/2022",
+          "time": "2:57 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "3s",
+          "date": "23/8/2022",
+          "time": "2:58 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "The truth can't handle Chuck Norris.",
+          "date": "23/8/2022",
+          "time": "2:58 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "s",
+          "date": "23/8/2022",
+          "time": "2:59 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "When Chuck Norris air-guitars, you can actually hear the real sound of a Gibson Les Paul coming from his air guitar.",
+          "date": "23/8/2022",
+          "time": "2:59 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "3132132122",
+          "date": "23/8/2022",
+          "time": "3:01 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "If you accidentally sit in Chuck Norris' seat at the opera, expect to have a clarinet jammed up your ass by intermission.",
+          "date": "23/8/2022",
+          "time": "3:01 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "12323123412",
+          "date": "23/8/2022",
+          "time": "3:03 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris doesn't want to steal One Direction's girl. he has standards",
+          "date": "23/8/2022",
+          "time": "3:03 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "g",
+          "date": "23/8/2022",
+          "time": "3:06 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris eventually found God, terrified and in phoetal position. NO ONE hides from Chuck Norris.",
+          "date": "23/8/2022",
+          "time": "3:06 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "rfsfsd",
+          "date": "23/8/2022",
+          "time": "3:10 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "When Steve Jobs booted up his first computer, his background was a picture of Chuck Norris taking a bite out of an apple.",
+          "date": "23/8/2022",
+          "time": "3:10 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         }
@@ -646,289 +533,209 @@
         },
         {
           "type": "own",
-          "value": "vito",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
+          "value": "12312",
+          "date": "23/7/2022. ",
+          "time": "12:23 AM",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "A blind man once accidently bumped into Chuck Norris on a Texas street corner. The mere fact that he touched Chuck Norris cured the man of his blindness. But sadly, the first, last and only thing the man ever saw in his entire life was a Chuck Norris roundhouse kick to his face.",
+          "date": "23/7/2022. ",
+          "time": "12:23 AM",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
         },
         {
           "type": "own",
-          "value": "21",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
+          "value": "22",
+          "date": "23/8/2022. ",
+          "time": "12:36 AM",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
         },
         {
-          "type": "own",
-          "value": "sup body",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "rekoe",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
+          "type": "response",
+          "value": "A guy at the grocery store told Chuck Norris \"I think I may just cut in front of you in this line\". Chuck told him \"I think I may just punch your nose out the back of your skull'.",
+          "date": "23/8/2022. ",
+          "time": "12:36 AM",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
         },
         {
           "type": "own",
           "value": "2",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "efasd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "12312",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "asd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "asdaed",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "Arthas",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "arthas papizi",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "sssaaa",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "aaa",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "asdaedad",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "12312323",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "zxf",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "1231",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "value": "The Earth does not revolve around the sun...this is because the sun revolves around Chuck Norris, who lives on Earth",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "12312",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris can walk on water. With his hands",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "123122",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris is all the rage.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "3",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris just had an incredible threesome with Courtney Love and Yoko Ono.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "asd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris survived the atomic bombs, he still stayed as a smooth-skin.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "фвывфыв",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "фвывфыв22222",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "efasd",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "value": "sdasdda",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "aa",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "12312",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "111",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "33",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "21",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris put humpty dumpty back together again, only to roundhouse kick him in the face",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "own",
-          "value": "a11",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3
-        },
-        {
-          "type": "response",
-          "value": "Chuck Norris never delivers a 'coup de grace' - that's a queer French term. He just kills you.",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
-          "id": 3,
-          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
-        },
-        {
-          "type": "own",
-          "value": "311",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "date": "23/8/2022. ",
+          "time": "12:41 AM",
           "id": 3,
           "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
         },
         {
           "type": "response",
-          "value": "Chuck Norris doesn't have nightmares, nightmares have him",
-          "date": "21/12/2119",
-          "time": "21:21 pm",
+          "value": "Chuck Norris had sexual relations with Monica Lewinsky. And Hillary. AT THE SAME TIME.",
+          "date": "23/8/2022. ",
+          "time": "12:41 AM",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "43241241123213123213123",
+          "date": "23/8/2022. ",
+          "time": "12:54 AM",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "the movie \"dont mess with zohan\" is based on the true story of Chuck Norris' life",
+          "date": "23/8/2022. ",
+          "time": "12:55 AM",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "44",
+          "date": "23/8/2022",
+          "time": "2:02 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "Full-powered Chuck Norris attacks are the second ingredient in Taco Bell ground beef.",
+          "date": "23/8/2022",
+          "time": "2:02 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "123123",
+          "date": "23/8/2022",
+          "time": "2:45 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "If your teacher gets angry because you put Chuck Norris as an answer in your test, he/she isn't mad because of that answer, your teacher is in fact jealous because you are smarter than him/her.",
+          "date": "23/8/2022",
+          "time": "2:45 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "2",
+          "date": "23/8/2022",
+          "time": "2:46 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris is so cool the sun was sad",
+          "date": "23/8/2022",
+          "time": "2:46 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "322",
+          "date": "23/8/2022",
+          "time": "2:51 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris can beat an Englishman in an impersonating British accents.",
+          "date": "23/8/2022",
+          "time": "2:51 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "2",
+          "date": "23/8/2022",
+          "time": "3:00 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "There is only one thing that could possibly stop Messi's unstoppable form Chuck Norris's roundhouse kick",
+          "date": "23/8/2022",
+          "time": "3:01 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "rfdfds",
+          "date": "23/8/2022",
+          "time": "3:05 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris's favorite word? CHORUS.",
+          "date": "23/8/2022",
+          "time": "3:06 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "sup body",
+          "date": "23/8/2022",
+          "time": "3:09 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris was recently on safari in Africa when a savage lion mauling occurred. The lion died an hour later and never should have been stupid enough to irritate Chuck.",
+          "date": "23/8/2022",
+          "time": "3:09 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "own",
+          "value": "3221",
+          "date": "23/8/2022",
+          "time": "3:13 AM",
+          "contactDate": "Aug 23, 2022",
+          "id": 3,
+          "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
+        },
+        {
+          "type": "response",
+          "value": "Boots cost Chuck Norris a fortune! He keeps losing them up people's asses!",
+          "date": "23/8/2022",
+          "time": "3:13 AM",
+          "contactDate": "Aug 23, 2022",
           "id": 3,
           "img": "https://s5o.ru/storage/simple/cyber/edt/87/2a/b5/b8/cybere3b2cd30365.png"
         }

@@ -1,4 +1,3 @@
-import { cleanup } from '@testing-library/react';
 import { nanoid } from 'nanoid';
 import { useEffect, useState} from 'react';
 
@@ -40,8 +39,11 @@ const MessegeContent = (props) => {
 
     const renderComponents = (arr, img) => {
         return arr.map(item => {
+            let date = item.date;
+            let time = item.time;
+
             if (item.type === "own") {
-               return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time}/>;
+               return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {date} time = {time}/>;
             } else {
                 return <ResponseMessegeItem key = {nanoid()} img = {img} value = {item.value} date = {item.date} time = {item.time}/>;
             }
@@ -50,12 +52,12 @@ const MessegeContent = (props) => {
 
     const renderOwnMessege = (arr) => {
         return arr.map(item => {
-            if (item.type === "own"){
-                if(item.id === contactId){
+            if(item.id === contactId){
+                if (item.type === "own"){
                     return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time}/>;
+                } else {
+                    return <ResponseMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time} img = {item.img}/>
                 }
-            } else {
-                return <ResponseMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time} img = {item.img}/>
             }
         }) 
     } 
@@ -83,7 +85,7 @@ const OwnMessegeItem = (props) => {
                     <div className="own-message__item__wrapper__rounded__text">{value}</div>
                 </div>
                 <div className="own-message__item__wrapper__date">
-                    <div className="date">{date},</div> 
+                    <div className="date">{date}</div> 
                     <div className="own-message__item__wrapper__date__time">{time}</div> 
                 </div>
             </div>
@@ -102,7 +104,7 @@ const ResponseMessegeItem = (props) => {
                     <div className="response-message__item__wrapper__rounded__text">{value}</div>
                 </div>
                 <div className="response-message__item__wrapper__date">
-                    <div className="date">{date},</div> 
+                    <div className="date">{date}</div> 
                     <div className="response-message__item__wrapper__date__time">{time}</div> 
                 </div>
             </div>

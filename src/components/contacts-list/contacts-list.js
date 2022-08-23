@@ -7,7 +7,7 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
     const [newMessege, setNewMessege] = useState([]);
     const [userList, setUserList] = useState([]);  
     const [loadingStatus, setLoadingStatus] = useState(false); 
-    // console.log(lastMessege[0])
+
     const {request} = useHttp()
 
     const setId = (id) => {
@@ -18,7 +18,7 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
         getUsers();
         
         try {
-            setMessege(messege);
+            setMessege(messege.value);
         } catch {
             console.log("messege not found")
         }
@@ -27,7 +27,7 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
     }, [messege])
 
     const setMessege = (messege) => {
-        setNewMessege(messege[messege.length -1].value);
+        setNewMessege(messege[messege.length -1]);
     }
 
     const getUsers = () => {
@@ -38,13 +38,16 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
 
     function renderComponents (arr) {        
         return arr.map(item => {
-            let messeges = item.messeges
-            let staticLastMessege = messeges[messeges.length -1].value;
+            const messeges = item.messeges
+           
+            const staticLastMessege = messeges[messeges.length -1].value;
+            const contentLastMessege = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? newMessege.substring(0, 5) : staticLastMessege; 
 
-            let contentLastMessege = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? newMessege : staticLastMessege; 
+            const staticLastDate = messeges[messeges.length -1].contactDate;
+            const contentLastDate = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? lastMessege[lastMessege.length -1].contactDate : staticLastDate; 
 
             return <View key = {item.id} id = {item.id} 
-            name = {item.name} time = {item.time} 
+            name = {item.name} time = {contentLastDate} 
             img = {item.img} lastMessege = {contentLastMessege} 
             setId = {setId}/>
         })
@@ -52,9 +55,6 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
 
     const items = renderComponents(userList);
     const content = loadingStatus ? items : null;
-
-    // filterComponents(items);
-
 
     return (
         <div className="aside__list">
