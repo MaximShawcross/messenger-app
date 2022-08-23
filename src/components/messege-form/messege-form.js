@@ -83,7 +83,6 @@ const MessegeForm = (props) => {
                 setTimeout(createNotification('info', item.value), 0);
                 return setSubmitMessege(item.value, "response")
             })
-        // setTimeout(createNotification('info', messege), renge + 500)
     }
 
     return (
@@ -94,7 +93,6 @@ const MessegeForm = (props) => {
         onSubmit = { values => {
             setSubmitMessege(values.messege, "own");
             setTimeout(setChuckMessege, renge)
-            // setTimeout(createNotification('info', '2'), renge + 500);
         }} 
         >
             <div className="messeges__footer">
@@ -106,9 +104,8 @@ const MessegeForm = (props) => {
                         id = "messege"
                         className = "messeges__footer__input" 
                         placeholder = "Type your mesaage"/>
-                    <button /* onClick={() => setTimeout(createNotification('info', '2'), renge)} */ type = "submit"> btn</button>
+                    {/* <button type = "submit"><FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button> */}
                 </Form>
-
                 <NotificationContainer/>
             </div>
         </Formik>

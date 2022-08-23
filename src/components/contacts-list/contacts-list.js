@@ -30,11 +30,6 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
         // eslint-disable-next-line
     }, [messege ])
 
-    // const sortList = (list) => {
-    //    list.sort((a, b) => b.messeges[b.messeges.length - 1].sortDate - a.messeges[a.messeges.length - 1].sortDate)
-    //    console.log(list.messeges[list.messeges.length - 1].sortDate)
-    // }
-
     const setMessege = (messege) => {
         setNewMessege(messege[messege.length -1]);
     }

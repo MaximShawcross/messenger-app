@@ -10,15 +10,24 @@ $border-color: 2px #989898 solid;
     cursor: pointer;
 }
 
+.icon {
+    background: url('../../resources/icons/paper-plane-icon.webp');
+}
+
 .messeges {
     &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         margin-top: auto;
         background-color:  $system-grey;
-        padding: 10px 15px;
+        padding: 15px;
+
         &__input {
             min-height: 30px;
             border: $border-color;       
-            border-radius: 12px 12px 12px 12px;
+            border-radius: 16px;
+            padding: 10px;
             width: 100%;        
         }
     }
