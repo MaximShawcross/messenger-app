@@ -13,10 +13,14 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
     const setId = (id) => {
         setContactId(id);
     }
+
+    const getVal = (a, b) => {
+        return a.messeges[a.messeges.length - 1].sortDate > b.messeges[b.messeges.length - 1].sortDate ? -1 : 1;     
+
+    };
     
     useEffect(() => {
         getUsers();
-        
         try {
             setMessege(messege.value);
         } catch {
@@ -24,7 +28,12 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
         }
         
         // eslint-disable-next-line
-    }, [messege])
+    }, [messege ])
+
+    // const sortList = (list) => {
+    //    list.sort((a, b) => b.messeges[b.messeges.length - 1].sortDate - a.messeges[a.messeges.length - 1].sortDate)
+    //    console.log(list.messeges[list.messeges.length - 1].sortDate)
+    // }
 
     const setMessege = (messege) => {
         setNewMessege(messege[messege.length -1]);
@@ -32,7 +41,7 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
 
     const getUsers = () => {
         request("http://localhost:3001/users")
-            .then(item => setUserList(item))
+            .then(item => setUserList(item.sort(getVal)))
             .then(setLoadingStatus(true))
     }
 
@@ -41,7 +50,7 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
             const messeges = item.messeges
            
             const staticLastMessege = messeges[messeges.length -1].value;
-            const contentLastMessege = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? newMessege.substring(0, 5) : staticLastMessege; 
+            const contentLastMessege = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? newMessege : staticLastMessege; 
 
             const staticLastDate = messeges[messeges.length -1].contactDate;
             const contentLastDate = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? lastMessege[lastMessege.length -1].contactDate : staticLastDate; 

@@ -7,7 +7,9 @@ export const contactDate = () => {
 
 export const messegeDate = () => {
     const date = new Date();
-    return (`${date.getDate()}/${(date.getMonth())+1}/${date.getFullYear()}`);
+    const month = ((date.getMonth())+1) < 10 ? `0${((date.getMonth())+1)}` : `${((date.getMonth())+1)}`
+
+    return (`${date.getDate()}/${month}/${date.getFullYear()}`);
 }
 
 export const messegeTime = () => {

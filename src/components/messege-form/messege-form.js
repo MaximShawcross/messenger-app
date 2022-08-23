@@ -22,7 +22,7 @@ const MessegeForm = (props) => {
         contactId === 0 ? getMesseges() : getMesseges(contactId)
         request("https://api.chucknorris.io/jokes/random")
             .then(item => console.log(item.value))
-        
+
     }, [contactId])
 
     const getRange = () => {
@@ -56,6 +56,7 @@ const MessegeForm = (props) => {
             date: messegeDate(), 
             time: messegeTime(),
             contactDate: contactDate(),
+            sortDate: new Date(),
             id:contactId,
             img: user.img
         }
