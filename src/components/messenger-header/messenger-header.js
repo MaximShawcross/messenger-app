@@ -12,7 +12,7 @@ const MessengerHeader = (props) => {
     const {request} = useHttp();
 
     useEffect(() => {
-        contactId === 0 ? getHeader() :getHeader(contactId);
+        contactId === 0 ? getHeader(1) :getHeader(contactId);
     }, [contactId])
 
 
@@ -28,6 +28,7 @@ const MessengerHeader = (props) => {
        return ( 
             <>
                 <img src = {img} alt="user-avatar"/>
+                <img className = "aprove" src={require("../../resources/icons/aprove-icon.png")} alt="aprove" />
                 <h2 className = "messeges__header__name">{name}</h2>
             </>
         )

@@ -4,12 +4,14 @@ import { Formik, Form, Field } from "formik";
 import { nanoid } from "nanoid";
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+
 import { messegeDate, messegeTime, contactDate} from '../../hooks/date.hook';
 import { useHttp } from "../../hooks/http.hook";
 
 import './messege-form.scss';
 import 'react-notifications/lib/notifications.css';
-
 
 const MessegeForm = (props) => {     
     const [user, setUser] = useState("");
@@ -19,10 +21,7 @@ const MessegeForm = (props) => {
     
     
     useEffect(() => {    
-        contactId === 0 ? getMesseges() : getMesseges(contactId)
-        request("https://api.chucknorris.io/jokes/random")
-            .then(item => console.log(item.value))
-
+        contactId === 0 ? getMesseges(1) : getMesseges(contactId)
     }, [contactId])
 
     const getRange = () => {
@@ -69,7 +68,6 @@ const MessegeForm = (props) => {
         if ( type === "response" ) {
             request(`http://localhost:3001/users/${contactId}`, "PUT", JSON.stringify(user))
                 .then(item => console.log("sucsess", item))
-                // .then(() => createNotification('info', "2"))
         } else {
             request(`http://localhost:3001/users/${contactId}`, "PUT", JSON.stringify(user))
                 .then(item => console.log("sucsess", item))
@@ -83,7 +81,6 @@ const MessegeForm = (props) => {
                 setTimeout(createNotification('info', item.value), 0);
                 return setSubmitMessege(item.value, "response")
             })
-        // setTimeout(createNotification('info', messege), renge + 500)
     }
 
     return (
@@ -93,8 +90,8 @@ const MessegeForm = (props) => {
         }}
         onSubmit = { values => {
             setSubmitMessege(values.messege, "own");
-            setTimeout(setChuckMessege, renge)
-            // setTimeout(createNotification('info', '2'), renge + 500);
+            setTimeout(setChuckMessege, renge);
+            values.messege = "";
         }} 
         >
             <div className="messeges__footer">
@@ -105,14 +102,15 @@ const MessegeForm = (props) => {
                         name = "messege"
                         id = "messege"
                         className = "messeges__footer__input" 
-                        placeholder = "Type your mesaage"/>
-                    <button /* onClick={() => setTimeout(createNotification('info', '2'), renge)} */ type = "submit"> btn</button>
+                        placeholder = "Type your mesaage"
+                        autoComplete="off"/>
+                        <button tabIndex = "0" className = "messeges__footer__button" type = "submit"><FontAwesomeIcon icon={faPaperPlane} /></button>
                 </Form>
-
                 <NotificationContainer/>
             </div>
         </Formik>
     )
+//testing
 }
 
 export default MessegeForm;

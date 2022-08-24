@@ -21,9 +21,9 @@ const MessegeContent = (props) => {
         // } catch {
         //     console.log('its fine')
         // }
-        contactId === 0 ? getMesseges() : getMesseges(contactId);
-        contactId === 0 ? getImage() : getImage(contactId);
-
+        contactId === 0 ? getMesseges(1) : getMesseges(contactId);
+        contactId === 0 ? getImage(1) : getImage(contactId);
+        // eslint-disable-next-line
     }, [contactId])
     
     const getMesseges = (id = 1) => {
@@ -85,7 +85,7 @@ const OwnMessegeItem = (props) => {
                     <div className="own-message__item__wrapper__rounded__text">{value}</div>
                 </div>
                 <div className="own-message__item__wrapper__date">
-                    <div className="date">{date}</div> 
+                    <div className="date">{date},</div> 
                     <div className="own-message__item__wrapper__date__time">{time}</div> 
                 </div>
             </div>
@@ -104,7 +104,7 @@ const ResponseMessegeItem = (props) => {
                     <div className="response-message__item__wrapper__rounded__text">{value}</div>
                 </div>
                 <div className="response-message__item__wrapper__date">
-                    <div className="date">{date}</div> 
+                    <div className="date">{date},</div> 
                     <div className="response-message__item__wrapper__date__time">{time}</div> 
                 </div>
             </div>

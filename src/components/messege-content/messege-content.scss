@@ -1,22 +1,13 @@
 $system-grey: #D8D8D8;
 $border-color: 2px #989898 solid;
-
-@mixin img {
-    display: block;            
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
+@use "../../styles/mixins";
 
 .messeges {
     .response-message__item {
         margin: 20px 10px 10px 10px;
         display: flex;
         img {
-            @include img;
+            @include mixins.img;
             width: 40px;
             height: 40px;
         }
@@ -25,10 +16,12 @@ $border-color: 2px #989898 solid;
                 padding: 10px 15px 10px 15px;
                 display: flex;
                 justify-content: center;
+                
                 align-items: center;                
-                background-color: darkblue;
-                border-radius: 8px 8px 8px 8px;
+                background-color: #34495E  ;
+                border-radius: 25px;
                 &__text {
+                    padding: 5px;
                     color: white;
                 }
             }
@@ -54,10 +47,11 @@ $border-color: 2px #989898 solid;
                 padding: 10px 15px 10px 15px;
                 display: flex;
                 justify-content: center;            
-                background-color: deeppink;
-                border-radius: 8px 8px 8px 8px;
+                background-color: #ABB2B9 ;
+                border-radius: 25px;
                 &__text {
-                    color: white;
+                    padding: 2px 5px;
+                    color: black;
                 }
             }
             &__date {
