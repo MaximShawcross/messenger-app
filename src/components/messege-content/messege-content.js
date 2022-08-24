@@ -21,9 +21,9 @@ const MessegeContent = (props) => {
         // } catch {
         //     console.log('its fine')
         // }
-        contactId === 0 ? getMesseges() : getMesseges(contactId);
-        contactId === 0 ? getImage() : getImage(contactId);
-
+        contactId === 0 ? getMesseges(1) : getMesseges(contactId);
+        contactId === 0 ? getImage(1) : getImage(contactId);
+        // eslint-disable-next-line
     }, [contactId])
     
     const getMesseges = (id = 1) => {

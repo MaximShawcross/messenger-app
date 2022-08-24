@@ -12,7 +12,7 @@ const MessengerHeader = (props) => {
     const {request} = useHttp();
 
     useEffect(() => {
-        contactId === 0 ? getHeader() :getHeader(contactId);
+        contactId === 0 ? getHeader(1) :getHeader(contactId);
     }, [contactId])
 
 

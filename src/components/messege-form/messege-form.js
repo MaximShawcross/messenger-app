@@ -21,7 +21,7 @@ const MessegeForm = (props) => {
     
     
     useEffect(() => {    
-        contactId === 0 ? getMesseges() : getMesseges(contactId)
+        contactId === 0 ? getMesseges(1) : getMesseges(contactId)
     }, [contactId])
 
     const getRange = () => {
@@ -68,7 +68,6 @@ const MessegeForm = (props) => {
         if ( type === "response" ) {
             request(`http://localhost:3001/users/${contactId}`, "PUT", JSON.stringify(user))
                 .then(item => console.log("sucsess", item))
-                // .then(() => createNotification('info', "2"))
         } else {
             request(`http://localhost:3001/users/${contactId}`, "PUT", JSON.stringify(user))
                 .then(item => console.log("sucsess", item))
