@@ -27,13 +27,13 @@ const MessegeContent = (props) => {
     }, [contactId])
     
     const getMesseges = (id = 1) => {
-        request(`http://localhost:3001/users/${id}`)
+        request(`https://messenger-app-tz.herokuapp.com/api/users/${id}`)
             .then(item => setMesseges(item.messeges))
             .then(setLoadingStatus(true));        
     }
 
     const getImage = (id = 1) => {
-        request(`http://localhost:3001/users/${id}`)
+        request(`https://messenger-app-tz.herokuapp.com/api/users/${id}`)
             .then(item => setImage(item.img));
     }
 

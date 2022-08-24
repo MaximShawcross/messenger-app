@@ -35,7 +35,7 @@ const ContactsList = ({sortedUsers, setContactId, lastMessege, setUsers, messege
     }
 
     const getUsers = () => {
-        request("http://localhost:3001/users")
+        request("https://messenger-app-tz.herokuapp.com/api/users")
             .then(item => {
                 setUserList(item.sort(sortByNewMessege))
                 setUsers(item.sort(sortByNewMessege));
