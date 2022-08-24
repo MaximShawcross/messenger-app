@@ -80,9 +80,11 @@ const View = (props) => {
     
     return (
         <div className="aside__list__item"
+            tabIndex="0"            
             onClick = {() => setId(id)}>
             <div className="aside__list__item__img">
-                <img src = {img} alt="user-avatar"/>
+                <img src = {img} alt="user-avatar"></img>
+                <img className = "aprove" src={require("../../resources/icons/aprove-icon.png")} alt="aprove" />
             </div>
             <div className="aside__list__item__text">
                 <p className="aside__list__item__text__name">{name}</p>

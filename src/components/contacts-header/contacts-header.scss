@@ -1,4 +1,4 @@
-$system-grey: #D8D8D8;
+$system-grey: #EBEDEF ;
 $border-color: 2px #989898 solid;
 
 @use "../../styles/mixins";
@@ -7,9 +7,24 @@ $border-color: 2px #989898 solid;
     &__header {
         padding: 15px 10px;
         background-color: $system-grey;
-        border-bottom: $border-color;         
+        border-bottom: $border-color;     
+        &__icon {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 95px;
+            left: 20px
+        }    
         &__img {
             display: flex;
+            position: relative;
+            .aprove {
+                width: 15px;
+                height: 15px;
+                position:absolute;
+                bottom: -5px;
+                left:35px;
+            }
             img {
                 @include mixins.img;
             }:nth-last-child(1) {
@@ -19,9 +34,10 @@ $border-color: 2px #989898 solid;
         &__search {
             margin-top: 20px;
             border: $border-color;       
-            border-radius: 8px 8px 8px 8px;
+            border-radius: 13px;
+            padding: 8px 8px 8px 30px;
             width: 100%;
-            padding: 3px;
+
         }
     }
 }

@@ -85,7 +85,7 @@ const OwnMessegeItem = (props) => {
                     <div className="own-message__item__wrapper__rounded__text">{value}</div>
                 </div>
                 <div className="own-message__item__wrapper__date">
-                    <div className="date">{date}</div> 
+                    <div className="date">{date},</div> 
                     <div className="own-message__item__wrapper__date__time">{time}</div> 
                 </div>
             </div>
@@ -104,7 +104,7 @@ const ResponseMessegeItem = (props) => {
                     <div className="response-message__item__wrapper__rounded__text">{value}</div>
                 </div>
                 <div className="response-message__item__wrapper__date">
-                    <div className="date">{date}</div> 
+                    <div className="date">{date},</div> 
                     <div className="response-message__item__wrapper__date__time">{time}</div> 
                 </div>
             </div>

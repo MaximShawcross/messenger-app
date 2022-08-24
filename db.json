@@ -465,6 +465,26 @@
           "sortDate": "2022-08-24T13:41:42.477Z",
           "id": 2,
           "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "own",
+          "value": "2",
+          "date": "24/08/2022",
+          "time": "5:40 PM",
+          "contactDate": "Aug 24, 2022",
+          "sortDate": "2022-08-24T14:40:17.436Z",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
+        },
+        {
+          "type": "response",
+          "value": "Chuck Norris recently attended a Black Panther and KKK rally at the South Carolina state house. Authorities found no survivors.",
+          "date": "24/08/2022",
+          "time": "5:40 PM",
+          "contactDate": "Aug 24, 2022",
+          "sortDate": "2022-08-24T14:40:31.056Z",
+          "id": 2,
+          "img": "https://click-storm.ru/i/articles/2/22145/unnamed.jpg"
         }
       ]
     },

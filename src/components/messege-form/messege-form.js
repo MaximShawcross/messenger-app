@@ -5,8 +5,8 @@ import { nanoid } from "nanoid";
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+
 import { messegeDate, messegeTime, contactDate} from '../../hooks/date.hook';
 import { useHttp } from "../../hooks/http.hook";
 
@@ -104,7 +104,7 @@ const MessegeForm = (props) => {
                         id = "messege"
                         className = "messeges__footer__input" 
                         placeholder = "Type your mesaage"
-                        autocomplete="off"/>
+                        autoComplete="off"/>
                         <button tabIndex = "0" className = "messeges__footer__button" type = "submit"><FontAwesomeIcon icon={faPaperPlane} /></button>
                 </Form>
                 <NotificationContainer/>

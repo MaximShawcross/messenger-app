@@ -1,6 +1,6 @@
 @use "../../styles/mixins";
 
-$system-grey: #D8D8D8;
+$system-grey: #EBEDEF;
 $border-color: 2px #989898 solid;
 
 
@@ -10,9 +10,17 @@ $border-color: 2px #989898 solid;
         background-color: $system-grey;
         display: flex;
         border-bottom: $border-color;
+        position: relative;        
         &__name {
             font-size: 14px;
             align-self: center;
+        }
+        .aprove {
+            width: 15px;
+            height: 15px;
+            position:absolute;
+            bottom: 11px;
+            left:52px;
         }
         img {
             @include mixins.img;

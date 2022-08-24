@@ -14,14 +14,18 @@ const App = () => {
     const [sortedUsers, setSortedUsers] = useState([]);
 
     return (
+        <>
         <div className="app">
-            <div className="aside">
-                <ContactsHeader sortedUsers = {sortedUsers} setSortedUsers = {setSortedUsers} users = {users} contactId = {contactId}/>
-                <ContactsList sortedUsers = {sortedUsers} setUsers = {setUsers} messege = {messege} lastMessege = {lastMessege} contactId = {contactId} setContactId = {setContactId}/>
-            </div>
+        <div className="aside">
+            <ContactsHeader sortedUsers = {sortedUsers} setSortedUsers = {setSortedUsers} users = {users} contactId = {contactId}/>
+            <ContactsList sortedUsers = {sortedUsers} setUsers = {setUsers} messege = {messege} lastMessege = {lastMessege} contactId = {contactId} setContactId = {setContactId}/>
+        </div>
             <MessegeField messege = {messege} setMessege = {setMessege} setLastMassege = {setLastMassege} contactId = {contactId}/>
-            
-        </div>       
+        </div>  
+        <footer class = "footer"></footer>  
+        </>
+           
+        
     )
 }
 

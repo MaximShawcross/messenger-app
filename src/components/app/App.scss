@@ -5,7 +5,7 @@
     font-family: Roboto, sans-serif;
 }
 
-$system-grey: #D8D8D8;
+$system-grey: #EBEDEF;
 $border-color: 2px #989898 solid;
 
 @mixin img {
@@ -25,4 +25,10 @@ $border-color: 2px #989898 solid;
     width: 30%; 
     min-height: 100vh;    
     border-right: $border-color;   
+}
+
+.footer {
+    background-color: #EBEDEF;
+    border-top: $border-color ;
+    height: 30px
 }

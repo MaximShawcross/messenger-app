@@ -18,9 +18,10 @@ $border-color: 2px #989898 solid;
                 justify-content: center;
                 
                 align-items: center;                
-                background-color: darkblue;
+                background-color: #34495E  ;
                 border-radius: 25px;
                 &__text {
+                    padding: 5px;
                     color: white;
                 }
             }
@@ -46,10 +47,11 @@ $border-color: 2px #989898 solid;
                 padding: 10px 15px 10px 15px;
                 display: flex;
                 justify-content: center;            
-                background-color: deeppink;
+                background-color: #ABB2B9 ;
                 border-radius: 25px;
                 &__text {
-                    color: white;
+                    padding: 2px 5px;
+                    color: black;
                 }
             }
             &__date {

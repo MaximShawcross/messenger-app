@@ -1,7 +1,7 @@
 @use "../../styles/mixins";
 
 
-$system-grey: #D8D8D8;
+$system-grey: #EBEDEF;
 $border-color: 2px #989898 solid;
 
 
@@ -22,6 +22,14 @@ $border-color: 2px #989898 solid;
             }
             &__img {
                 min-width: 15%;
+                position: relative;
+                .aprove {
+                    width: 15px;
+                    height: 15px;
+                    position:absolute;
+                    top: 38px;
+                    right:5px;
+                }
                 img {
                     @include mixins.img;
                 }
