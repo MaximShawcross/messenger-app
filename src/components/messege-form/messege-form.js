@@ -4,12 +4,14 @@ import { Formik, Form, Field } from "formik";
 import { nanoid } from "nanoid";
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import { messegeDate, messegeTime, contactDate} from '../../hooks/date.hook';
 import { useHttp } from "../../hooks/http.hook";
 
 import './messege-form.scss';
 import 'react-notifications/lib/notifications.css';
-
 
 const MessegeForm = (props) => {     
     const [user, setUser] = useState("");
@@ -20,9 +22,6 @@ const MessegeForm = (props) => {
     
     useEffect(() => {    
         contactId === 0 ? getMesseges() : getMesseges(contactId)
-        request("https://api.chucknorris.io/jokes/random")
-            .then(item => console.log(item.value))
-
     }, [contactId])
 
     const getRange = () => {
@@ -92,7 +91,8 @@ const MessegeForm = (props) => {
         }}
         onSubmit = { values => {
             setSubmitMessege(values.messege, "own");
-            setTimeout(setChuckMessege, renge)
+            setTimeout(setChuckMessege, renge);
+            values.messege = "";
         }} 
         >
             <div className="messeges__footer">
@@ -104,7 +104,7 @@ const MessegeForm = (props) => {
                         id = "messege"
                         className = "messeges__footer__input" 
                         placeholder = "Type your mesaage"/>
-                    {/* <button type = "submit"><FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button> */}
+                        <button className = "messeges__footer__button" type = "submit"><FontAwesomeIcon icon={faPaperPlane} /></button>
                 </Form>
                 <NotificationContainer/>
             </div>
