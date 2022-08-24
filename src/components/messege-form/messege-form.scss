@@ -1,14 +1,6 @@
 $system-grey: #D8D8D8;
 $border-color: 2px #989898 solid;
-
-@mixin img {
-    display: block;            
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-right: 10px;
-    cursor: pointer;
-}
+@import url('../../styles/mixins.scss');
 
 .icon {
     background: url('../../resources/icons/paper-plane-icon.webp');
@@ -36,29 +28,6 @@ $border-color: 2px #989898 solid;
         &__wrapper {
             position: relative;
         }
-        // input {
-        //     margin: 0px;
-        //     padding: 0px;
-        //     width: 100%;
-        //     outline: none;
-        //     height: 30px;
-        //     border-radius: 5px;
-        // }
-         
-        // button {
-        //     position: absolute;
-        //     top: 0;
-        //     border-radius: 5px;
-        //     right: 0px;
-        //     z-index: 2;
-        //     border: none;
-        //     top: 2px;
-        //     height: 30px;
-        //     cursor: pointer;
-        //     color: white;
-        //     background-color: #1e90ff;
-        //     transform: translateX(2px);
-        // }
         &__input {
             min-height: 30px;
             border: $border-color;       
@@ -66,6 +35,12 @@ $border-color: 2px #989898 solid;
             padding: 10px;
             width: 100%;        
             outline: none;
+            background-color: white;
+
+        }:active {
+            background-color: white;
+            border-radius: 16px;
+
         }
     }
 }

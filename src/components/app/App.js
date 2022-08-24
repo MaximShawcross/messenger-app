@@ -10,12 +10,14 @@ const App = () => {
     const [messege, setMessege] = useState([]);    
     const [contactId, setContactId] = useState(0);
     const [lastMessege, setLastMassege] = useState([]);
+    const [users, setUsers] = useState([])
+    const [sortedUsers, setSortedUsers] = useState([]);
 
     return (
         <div className="app">
             <div className="aside">
-                <ContactsHeader contactId = {contactId}/>
-                <ContactsList messege = {messege} lastMessege = {lastMessege} contactId = {contactId} setContactId = {setContactId}/>
+                <ContactsHeader sortedUsers = {sortedUsers} setSortedUsers = {setSortedUsers} users = {users} contactId = {contactId}/>
+                <ContactsList sortedUsers = {sortedUsers} setUsers = {setUsers} messege = {messege} lastMessege = {lastMessege} contactId = {contactId} setContactId = {setContactId}/>
             </div>
             <MessegeField messege = {messege} setMessege = {setMessege} setLastMassege = {setLastMassege} contactId = {contactId}/>
             

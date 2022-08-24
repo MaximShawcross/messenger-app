@@ -3,7 +3,7 @@ import { useHttp } from '../../hooks/http.hook';
 
 import './contacts-list.scss';
 
-const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
+const ContactsList = ({sortedUsers, setContactId, lastMessege, setUsers, messege}) => {
     const [newMessege, setNewMessege] = useState([]);
     const [userList, setUserList] = useState([]);  
     const [loadingStatus, setLoadingStatus] = useState(false); 
@@ -14,7 +14,7 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
         setContactId(id);
     }
 
-    const getVal = (a, b) => {
+    const sortByNewMessege = (a, b) => {
         return a.messeges[a.messeges.length - 1].sortDate > b.messeges[b.messeges.length - 1].sortDate ? -1 : 1;     
 
     };
@@ -28,7 +28,7 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
         }
         
         // eslint-disable-next-line
-    }, [messege ])
+    }, [messege])
 
     const setMessege = (messege) => {
         setNewMessege(messege[messege.length -1]);
@@ -36,13 +36,17 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
 
     const getUsers = () => {
         request("http://localhost:3001/users")
-            .then(item => setUserList(item.sort(getVal)))
+            .then(item => {
+                setUserList(item.sort(sortByNewMessege))
+                setUsers(item.sort(sortByNewMessege));
+            })
             .then(setLoadingStatus(true))
     }
 
-    function renderComponents (arr) {        
+    function renderComponents (arr, sorte) {  
+        
         return arr.map(item => {
-            const messeges = item.messeges
+            const messeges = item.messeges;
            
             const staticLastMessege = messeges[messeges.length -1].value;
             const contentLastMessege = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? newMessege : staticLastMessege; 
@@ -58,7 +62,10 @@ const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
     } 
 
     const items = renderComponents(userList);
-    const content = loadingStatus ? items : null;
+    const sortedItems = renderComponents(sortedUsers);
+
+
+    const content = loadingStatus && sortedUsers.length === 3 || sortedUsers.length === 0 ? items : sortedItems;
 
     return (
         <div className="aside__list">

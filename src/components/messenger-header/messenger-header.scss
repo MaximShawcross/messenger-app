@@ -1,21 +1,8 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, sans-serif;
-}
+@use "../../styles/mixins";
 
 $system-grey: #D8D8D8;
 $border-color: 2px #989898 solid;
 
-@mixin img {
-    display: block;            
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-right: 10px;
-    cursor: pointer;
-}
 
 .messeges {
     &__header {
@@ -28,7 +15,7 @@ $border-color: 2px #989898 solid;
             align-self: center;
         }
         img {
-            @include img;
+            @include mixins.img;
         }
     }
 }

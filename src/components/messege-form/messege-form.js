@@ -103,8 +103,9 @@ const MessegeForm = (props) => {
                         name = "messege"
                         id = "messege"
                         className = "messeges__footer__input" 
-                        placeholder = "Type your mesaage"/>
-                        <button className = "messeges__footer__button" type = "submit"><FontAwesomeIcon icon={faPaperPlane} /></button>
+                        placeholder = "Type your mesaage"
+                        autocomplete="off"/>
+                        <button tabIndex = "0" className = "messeges__footer__button" type = "submit"><FontAwesomeIcon icon={faPaperPlane} /></button>
                 </Form>
                 <NotificationContainer/>
             </div>
