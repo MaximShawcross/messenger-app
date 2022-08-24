@@ -44,7 +44,7 @@ const MessegeForm = (props) => {
     };
     
     const getMesseges = (id = 1) => {
-        request(`http://localhost:3001/users/${id}`)
+        request(`https://messenger-app-tz.herokuapp.com/api/users/${id}`)
         .then(item => setUser(item))
     }
 
@@ -66,10 +66,10 @@ const MessegeForm = (props) => {
         user.messeges.push(settings);
 
         if ( type === "response" ) {
-            request(`http://localhost:3001/users/${contactId}`, "PUT", JSON.stringify(user))
+            request(`https://messenger-app-tz.herokuapp.com/api/users/${contactId}`, "PUT", JSON.stringify(user))
                 .then(item => console.log("sucsess", item))
         } else {
-            request(`http://localhost:3001/users/${contactId}`, "PUT", JSON.stringify(user))
+            request(`https://messenger-app-tz.herokuapp.com/api/users/${contactId}`, "PUT", JSON.stringify(user))
                 .then(item => console.log("sucsess", item))
         }
         

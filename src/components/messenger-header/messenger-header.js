@@ -17,7 +17,7 @@ const MessengerHeader = (props) => {
 
 
     const getHeader = (id = 1) => {
-        request(`http://localhost:3001/users/${id}`)
+        request(`https://messenger-app-tz.herokuapp.com/api/users/${id}`)
             .then(item => setHeader(item))
             .then(setLoadingStatus(true));
     }
