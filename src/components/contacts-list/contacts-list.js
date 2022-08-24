@@ -1,42 +1,92 @@
+import { useState, useEffect } from 'react';
+import { useHttp } from '../../hooks/http.hook'; 
+
 import './contacts-list.scss';
-import avatar from '../../resources/img/luffy_avatar.jpg';
 
+const ContactsList = ({setContactId, lastMessege, contactId, messege}) => {
+    const [newMessege, setNewMessege] = useState([]);
+    const [userList, setUserList] = useState([]);  
+    const [loadingStatus, setLoadingStatus] = useState(false); 
 
-const ContactsList = () => {
+    const {request} = useHttp()
+
+    const setId = (id) => {
+        setContactId(id);
+    }
+
+    const getVal = (a, b) => {
+        return a.messeges[a.messeges.length - 1].sortDate > b.messeges[b.messeges.length - 1].sortDate ? -1 : 1;     
+
+    };
+    
+    useEffect(() => {
+        getUsers();
+        try {
+            setMessege(messege.value);
+        } catch {
+            console.log("messege not found")
+        }
+        
+        // eslint-disable-next-line
+    }, [messege ])
+
+    // const sortList = (list) => {
+    //    list.sort((a, b) => b.messeges[b.messeges.length - 1].sortDate - a.messeges[a.messeges.length - 1].sortDate)
+    //    console.log(list.messeges[list.messeges.length - 1].sortDate)
+    // }
+
+    const setMessege = (messege) => {
+        setNewMessege(messege[messege.length -1]);
+    }
+
+    const getUsers = () => {
+        request("http://localhost:3001/users")
+            .then(item => setUserList(item.sort(getVal)))
+            .then(setLoadingStatus(true))
+    }
+
+    function renderComponents (arr) {        
+        return arr.map(item => {
+            const messeges = item.messeges
+           
+            const staticLastMessege = messeges[messeges.length -1].value;
+            const contentLastMessege = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? newMessege : staticLastMessege; 
+
+            const staticLastDate = messeges[messeges.length -1].contactDate;
+            const contentLastDate = newMessege.length > 0 && item.id === lastMessege[lastMessege.length -1].id ? lastMessege[lastMessege.length -1].contactDate : staticLastDate; 
+
+            return <View key = {item.id} id = {item.id} 
+            name = {item.name} time = {contentLastDate} 
+            img = {item.img} lastMessege = {contentLastMessege} 
+            setId = {setId}/>
+        })
+    } 
+
+    const items = renderComponents(userList);
+    const content = loadingStatus ? items : null;
 
     return (
         <div className="aside__list">
             <h1 className="aside__list__header">Chats</h1>
-            <div className="aside__list__item">
-                <div className="aside__list__item__img">
-                    <img src = {avatar} alt=""/>
-                </div>
-                <div className="aside__list__item__text">
-                    <p className="aside__list__item__text__name">Alice Freeman</p>
-                    <div className="aside__list__item__text__message">You are the worst!</div>
-                </div>
-                <div className="aside__list__item__date">Feb 18, 2017</div>
+            {content}
+        </div>
+    )
+}
+
+const View = (props) => {
+    const {name, time, img, lastMessege, setId, id} = props;
+    
+    return (
+        <div className="aside__list__item"
+            onClick = {() => setId(id)}>
+            <div className="aside__list__item__img">
+                <img src = {img} alt="user-avatar"/>
             </div>
-            <div className="aside__list__item">
-                <div className="aside__list__item__img">
-                    <img src = {avatar} alt="avatar"/>
-                </div>
-                <div className="aside__list__item__text">
-                    <p className="aside__list__item__text__name">Alice Freeman</p>
-                    <div className="aside__list__item__text__message">You are the worst!</div>
-                </div>
-                <div className="aside__list__item__date">Feb 18, 2017</div>
+            <div className="aside__list__item__text">
+                <p className="aside__list__item__text__name">{name}</p>
+                <div className="aside__list__item__text__message">{lastMessege}</div>
             </div>
-            <div className="aside__list__item">
-                <div className="aside__list__item__img">
-                    <img src = {avatar} alt="user-avatar"/>
-                </div>
-                <div className="aside__list__item__text">
-                    <p className="aside__list__item__text__name">Alice Freeman</p>
-                    <div className="aside__list__item__text__message">You are the worst!</div>
-                </div>
-                <div className="aside__list__item__date">Feb 18, 2017</div>
-            </div>
+            <div className="aside__list__item__date">{time}</div>
         </div>
     )
 }

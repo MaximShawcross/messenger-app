@@ -1,37 +1,112 @@
-import './messege-content.scss';
-import avatar from '../../resources/icons/avatar-icon.png'
+import { nanoid } from 'nanoid';
+import { useEffect, useState} from 'react';
 
-const MessegeContent = () => {
+import { useHttp } from '../../hooks/http.hook'; 
+
+import './messege-content.scss';
+
+const MessegeContent = (props) => {
+    const [messeges, setMesseges] = useState([]);
+    const [image, setImage] = useState("");
+    const [loadingStatus, setLoadingStatus] = useState(false);  
+    // const [messegeLodingStatus, setMessegeLoadingStatus] = useState(false);  
+
+    const {request} = useHttp();
+    const {contactId, messege, setMessege} = props;
+    
+    useEffect(() => {
+        setMessege([]);
+        // try {
+        //     setLastMassege([]);
+        // } catch {
+        //     console.log('its fine')
+        // }
+        contactId === 0 ? getMesseges() : getMesseges(contactId);
+        contactId === 0 ? getImage() : getImage(contactId);
+
+    }, [contactId])
+    
+    const getMesseges = (id = 1) => {
+        request(`http://localhost:3001/users/${id}`)
+            .then(item => setMesseges(item.messeges))
+            .then(setLoadingStatus(true));        
+    }
+
+    const getImage = (id = 1) => {
+        request(`http://localhost:3001/users/${id}`)
+            .then(item => setImage(item.img));
+    }
+
+    const renderComponents = (arr, img) => {
+        return arr.map(item => {
+            let date = item.date;
+            let time = item.time;
+
+            if (item.type === "own") {
+               return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {date} time = {time}/>;
+            } else {
+                return <ResponseMessegeItem key = {nanoid()} img = {img} value = {item.value} date = {item.date} time = {item.time}/>;
+            }
+        })
+    }
+
+    const renderOwnMessege = (arr) => {
+        return arr.map(item => {
+            if(item.id === contactId){
+                if (item.type === "own"){
+                    return <OwnMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time}/>;
+                } else {
+                    return <ResponseMessegeItem key = {nanoid()} value = {item.value} date = {item.date} time = {item.time} img = {item.img}/>
+                }
+            }
+        }) 
+    } 
+
+    const items = renderComponents(messeges, image);
+    const content = loadingStatus ? items : <p>wait a second</p>; 
+    const ownMessege = renderOwnMessege(messege); 
+
+
     return (
         <>
-            <OwnMessegeItem/>
-            <ResponseMessegeItem/>
+            {content}
+            {ownMessege}
         </>
     )
 }
 
-const OwnMessegeItem = () => {
+const OwnMessegeItem = (props) => {
+    const {value, date, time} = props;
+
     return (
         <div className="own-message__item">
             <div className="own-message__item__content">
                 <div className="own-message__item__wrapper__rounded">
-                    <div className="own-message__item__wrapper__rounded__text">can u wait for me?</div>
+                    <div className="own-message__item__wrapper__rounded__text">{value}</div>
                 </div>
-                <div className="own-message__item__wrapper__date">4/22/17, 4:00 AM</div>
+                <div className="own-message__item__wrapper__date">
+                    <div className="date">{date}</div> 
+                    <div className="own-message__item__wrapper__date__time">{time}</div> 
+                </div>
             </div>
         </div>
     )
 }
 
-const ResponseMessegeItem = () => {
+const ResponseMessegeItem = (props) => {
+    const {value, date, time, img} = props;
+
     return (
         <div className="response-message__item">
-            <img src= {avatar} alt="user-avatar"/>
+            <img src = {img} alt="user-avatar"/>
             <div className="response-message__item__content">
                 <div className="response-message__item__wrapper__rounded">
-                    <div className="response-message__item__wrapper__rounded__text">can u wait for me?</div>
+                    <div className="response-message__item__wrapper__rounded__text">{value}</div>
                 </div>
-                <div className="response-message__item__wrapper__date">4/22/17, 4:00 AM</div>
+                <div className="response-message__item__wrapper__date">
+                    <div className="date">{date}</div> 
+                    <div className="response-message__item__wrapper__date__time">{time}</div> 
+                </div>
             </div>
         </div>
     )
